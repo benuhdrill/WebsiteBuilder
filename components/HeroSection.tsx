@@ -28,9 +28,9 @@ export default function HeroSection({ bookingUrl }: HeroSectionProps) {
       </p>
 
       <h1 className="hero-item text-h1 md:text-[52px] md:leading-[1.1] text-white mb-7">
-        Operational Clarity,
+        Systems That Scale
         <br />
-        By Design.
+        With You.
       </h1>
 
       <p className="hero-item text-body md:text-[17px] text-white/60 mb-11 leading-relaxed max-w-xl">
