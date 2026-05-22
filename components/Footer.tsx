@@ -36,7 +36,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-caption text-white/25">
-            © 2025 Backend Studio. All rights reserved.
+            © 2026 Backend Studio. All rights reserved.
           </p>
           <p className="text-caption text-white/25">backendstudio.io</p>
         </div>

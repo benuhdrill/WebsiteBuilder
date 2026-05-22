@@ -16,7 +16,7 @@ const config: Config = {
         slate: '#6B7280',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         h1: ['36px', { lineHeight: '1.13', fontWeight: '700' }],
