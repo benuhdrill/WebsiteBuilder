@@ -24,7 +24,7 @@ export default function HeroSection({ bookingUrl }: HeroSectionProps) {
     <div className="max-w-3xl">
       {/* Each direct child gets hero-item so nth-child delays apply */}
       <p className="hero-item text-caption text-ocean uppercase tracking-[0.22em] mb-6">
-        Systems Implementation
+        Operational Design
       </p>
 
       <h1 className="hero-item text-h1 md:text-[52px] md:leading-[1.1] text-white mb-7">
@@ -34,7 +34,7 @@ export default function HeroSection({ bookingUrl }: HeroSectionProps) {
       </h1>
 
       <p className="hero-item text-body md:text-[17px] text-white/60 mb-11 leading-relaxed max-w-xl">
-        Backend Studio incorporates systems to turn a busy business into a
+        Backend Studio builds the infrastructure to turn a busy business into a
         streamlined one.
       </p>
 

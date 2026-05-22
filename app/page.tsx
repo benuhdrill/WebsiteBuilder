@@ -115,7 +115,7 @@ export default function Home() {
               What We Do
             </p>
             <h2 className="text-h2 md:text-[34px] text-white mb-4">
-              Systems Built for Real Operations
+              Built for Real Operations
             </h2>
             <p className="text-body text-white/50 max-w-sm leading-relaxed">
               From audit to implementation, every engagement starts with
