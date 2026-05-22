@@ -34,10 +34,8 @@ export default function HeroSection({ bookingUrl }: HeroSectionProps) {
       </h1>
 
       <p className="hero-item text-body md:text-[17px] text-white/60 mb-11 leading-relaxed max-w-xl">
-        Backend Studio designs and implements the operational infrastructure your
-        business runs on. We replace manual friction with reliable, scalable
-        systems—so your team spends less time fighting tools and more time moving
-        forward.
+        Backend Studio incorporates systems to turn a busy business into a
+        streamlined one.
       </p>
 
       <div className="hero-item flex flex-col sm:flex-row items-start sm:items-center gap-5">
