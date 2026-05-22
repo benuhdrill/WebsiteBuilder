@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0A1628;
+    color: #ffffff;
+  }
+}
+
+/* ─── Background effects ─────────────────────────────────────── */
+
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(91, 184, 245, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.ocean-glow {
+  background: radial-gradient(ellipse at center, rgba(26, 127, 212, 0.12) 0%, transparent 70%);
+}
+
+/* ─── Hero entrance (CSS only, no JS) ───────────────────────── */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.hero-item {
+  animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-item:nth-child(1) { animation-delay: 0.05s; }
+.hero-item:nth-child(2) { animation-delay: 0.18s; }
+.hero-item:nth-child(3) { animation-delay: 0.30s; }
+.hero-item:nth-child(4) { animation-delay: 0.42s; }
+
+/* ─── Scroll reveal ──────────────────────────────────────────── */
+/*
+  Content starts VISIBLE (no opacity:0 on initial render).
+  JS adds `.reveal-hidden` only to off-screen elements,
+  then swaps it to `.reveal-show` when they enter the viewport.
+  If JS is slow or fails, everything stays visible.
+*/
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.reveal-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity  0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Reduced motion ────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-item,
+  .reveal-hidden,
+  .reveal-show {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
